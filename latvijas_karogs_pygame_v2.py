@@ -72,7 +72,7 @@ while running:
     header_rect = header_surf.get_rect(center=(WIDTH//2, 18))
     screen.blit(header_surf, header_rect)
     draw_latvian_flag(screen, flag_top, flag_height)
-    pygame.draw.circle(screen, WHITE, (int(round(circle_x)), int(round(circle_y))), circle_radius)
+    pygame.draw.circle(screen, BLACK, (int(round(circle_x)), int(round(circle_y))), circle_radius)
     t = pygame.time.get_ticks() / 1000.0
     size = int(round(pulse_base + pulse_amp * math.sin(2 * math.pi * pulse_speed * t)))
     if size < 8:
